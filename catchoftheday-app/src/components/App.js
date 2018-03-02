@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Order from './Order';
 import Inventory from './Inventory';
+import sampleFishes from '../sample-fishes';
 
 class App extends Component {
     state = {
         fishes: {},
         order: {}
+    }
+    loadSampleFishes = () => {
+        this.setState({ fishes: sampleFishes });
     }
     addFish = fish => {
         // 1. Take a copy of the existing state
@@ -24,7 +28,10 @@ class App extends Component {
                 </div>
 
                 <Order />
-                <Inventory addFish={this.addFish} />
+                <Inventory
+                    addFish={this.addFish}
+                    loadSampleFishes={this.loadSampleFishes}
+                />
             </div>
         );
     }
