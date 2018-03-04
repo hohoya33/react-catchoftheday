@@ -24,19 +24,16 @@
   padding: 0;
 }
 .count-enter {
-  background: #f00;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
 .count-enter.count-enter-active {
-  background: #ff0;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 .count-exit {
-  background: #000;
   -webkit-transform: translateY(0);
           transform: translateY(0);
   -webkit-transition: 0.5s;
@@ -46,9 +43,8 @@
   bottom: 0;
 }
 .count-exit.count-exit-active {
-  background: #008000;
-  -webkit-transform: translateY(-100%) scale(3);
-          transform: translateY(-100%) scale(3);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 @font-face {
   font-family: "haymakerregular";
@@ -350,7 +346,6 @@ header.top h3:after {
           box-shadow: 0 5px 5px rgba(0,0,0,0.1);
   overflow: scroll;
 }
-/*
 .catch-of-the-day > *:first-child {
   -ms-flex-negative: 1;
       flex-shrink: 1;
@@ -374,7 +369,6 @@ header.top h3:after {
   -webkit-transform: translateX(-50%) rotateY(10deg) translateX(50%) scale(1.08) translateX(24px);
           transform: translateX(-50%) rotateY(10deg) translateX(50%) scale(1.08) translateX(24px);
 }
-*/
 input#fold:not(:checked) ~ #main .catch-of-the-day > * {
   -webkit-transform: none;
           transform: none;
