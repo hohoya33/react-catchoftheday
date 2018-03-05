@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Header from './Header';
 import Order from './Order';
 import Inventory from './Inventory';
 import sampleFishes from '../sample-fishes';
 import Fish from './Fish';
 import base from '../base';
-
+/*
+C -> Create
+R -> Read
+U -> Update
+D -> Delete
+*/
 class App extends Component {
+    static propTypes = {
+        match: PropTypes.object
+    }
     state = {
         fishes: {},
         order: {}

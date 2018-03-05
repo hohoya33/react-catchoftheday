@@ -7,6 +7,7 @@ class Order extends Component {
     static propTypes = {
         fishes: PropTypes.object,
         order: PropTypes.object,
+        removeFromOrder: PropTypes.func
     }
     renderOrder = key => {
         const fish = this.props.fishes[key];
