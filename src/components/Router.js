@@ -4,9 +4,8 @@ import StorePicker from './StorePicker';
 import App from './App';
 import NotFound from './NotFound';
 
-const repo = `/${window.location.pathname.split('/')[1]}`;
 const Router = () => (
-    <BrowserRouter basename={repo}>
+    <BrowserRouter>
         <Switch>
             <Route exact path="/" component={StorePicker} />
             <Route path="/store/:storeId" component={App} />

@@ -2,7 +2,6 @@
   "name": "catchoftheday-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hohoya33.github.io/getting-fishy/",
   "dependencies": {
     "autoprefixer-stylus": "^0.14.0",
     "firebase": "^4.10.1",
